@@ -69,14 +69,14 @@ strong.onclick = function () {
 download.onclick = function () {
     var url = canvas.toDataURL("image/png");
     var a = document.createElement('a')
-    a.href  = url
+    a.href = url
     a.download = '我的作品'
     a.target = '_blank'
     a.click()
 }
 
 clear.onclick = function () {
-    context.clearRect(0,0,canvas.width,canvas.height)
+    context.clearRect(0, 0, canvas.width, canvas.height)
     context.fillStyle = "white";
     context.fillRect(0, 0, canvas.width, canvas.height);
 }

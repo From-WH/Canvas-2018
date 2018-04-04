@@ -42,14 +42,12 @@ function drawCircle(x, y, radius) {
 function drawline(x1, y1, x2, y2) {
     context.beginPath();
     context.moveTo(x1, y1);
-    context.lineWidth = 5
+    context.lineWidth = 10
     context.lineTo(x2, y2);
     context.stroke();
     context.closePath();
 }
 function listenToMouse() {
-
-
     var using = false
     var lastpoint = { x: undefined, y: undefined }
     canvas.onmousedown = function (aaa) {
